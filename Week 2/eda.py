@@ -41,7 +41,6 @@ def data_info():
     # None
 
 # ----- UNIVARIATE ANALYSIS -----
-
 def genre_distribution():
     plt.figure(figsize=(12,6))
     df['genres'].str.split('|').explode().value_counts().head(10).plot(kind='bar', color='skyblue')
@@ -62,7 +61,6 @@ def rating_distribution():
     plt.show()
 
 # ----- BIVARIATE ANALYSIS -----
-
 def mean_rating_by_genre():
     exploded = df.copy()
     exploded['genres'] = exploded['genres'].str.split('|')
@@ -76,10 +74,27 @@ def mean_rating_by_genre():
     plt.tight_layout()
     plt.show()
 
-def correlation_heatmap():
-    plt.figure(figsize=(8,6))
-    sns.heatmap(df[['userId', 'movieId', 'rating']].corr(), annot=True, cmap='coolwarm', fmt='.2f')
-    plt.title('Correlation Heatmap')
+# Highest Rated Movies
+def plot_highest_rated_movies():
+    avg_ratings = df.groupby('title')['rating'].mean().sort_values(ascending=False)
+    plt.figure(figsize=(10, 6))
+    avg_ratings.head(20).plot(kind='bar', color='lightcoral')
+    plt.title('Top 20 Highest Rated Movies (Average)')
+    plt.ylabel('Average Rating')
+    plt.xticks(rotation=75)
+    plt.tight_layout()
+    plt.show()
+
+# Rating Probability
+def plot_rating_probability():
+    rating_probs = df['rating'].value_counts(normalize=True).sort_index()
+    print("\n--- Probability of Each Rating ---")
+    print(rating_probs)
+    plt.figure(figsize=(8, 5))
+    sns.barplot(x=rating_probs.index, y=rating_probs.values, palette="pastel")
+    plt.title('Probability of Each Rating')
+    plt.xlabel('Rating')
+    plt.ylabel('Probability')
     plt.tight_layout()
     plt.show()
 
@@ -92,14 +107,15 @@ def main():
         "3": ("Genre Distribution", genre_distribution),
         "4": ("Rating Distribution", rating_distribution),
         "5": ("Mean Rating by Genre", mean_rating_by_genre),
-        "6": ("Correlation Heatmap", correlation_heatmap),
+        "6": ("Top 20 Highest Rated Movies (Average)", plot_highest_rated_movies),
+        "7": ("Probability of Each Rating", plot_rating_probability),
     }
 
     print("Select an option to perform analysis:")
     for key, (desc, _) in options.items():
         print(f"{key}. {desc}")
 
-    choice = input("Enter your choice (1-6): ").strip()
+    choice = input("Enter your choice (1-7): ").strip()
 
     if choice in options:
         print(f"\nYou selected: {options[choice][0]}")
@@ -109,3 +125,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
