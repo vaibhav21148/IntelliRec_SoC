@@ -7,9 +7,9 @@ IntelliRec : An Intelligent Recommendation Engine for Personalised User Experien
 ## Week 1
 
 ### ✅Goals
--[x]  Completed study of linear algebra fundamentals.
--[x]  Implemented cosine similarity.
--[x]  Dataset collected and preprocessed.
+- [x]  Completed study of linear algebra fundamentals.
+- [x]  Implemented cosine similarity.
+- [x]  Dataset collected and preprocessed.
 
 ### What I Knew Before
 - Basics of Python and pandas
@@ -24,9 +24,9 @@ IntelliRec : An Intelligent Recommendation Engine for Personalised User Experien
 ## Week 2
 
 ### ✅Goals
--[x] Completed study of probability concepts.
--[x] Performed EDA on the dataset.
--[x] Visualizations created.
+- [x] Completed study of probability concepts.
+- [x] Performed EDA on the dataset.
+- [x] Visualizations created.
 
 ### What I Knew Before
 - Basics of Probability and Statistics (IE102)
@@ -41,9 +41,9 @@ IntelliRec : An Intelligent Recommendation Engine for Personalised User Experien
 ## Week 3
 
 ### ✅Goals
--[x]  Completed study of SVD.
--[x]  Implemented collaborative filtering model.
--[x]  Evaluated model performance.
+- [x]  Completed study of SVD.
+- [x]  Implemented collaborative filtering model.
+- [x]  Evaluated model performance.
 
 ### What I Learned
 🔸 Matrix Factorization (SVD)
@@ -58,17 +58,17 @@ Where:
 ( V^T ): Item latent feature matrix
 This helps estimate missing ratings by projecting users and items into a shared feature space.
 
-🔸 RMSE Evaluation
+🔸 RMSE Evaluation <br>
 🔸 Implemented SVD using surprise library
 
 ## Week 4
 
 ### ✅Goals
--[x]  Prepare interaction matrix using dataset.
--[ ]  Implemented classical models.
--[ ]  Understand and implement user-based k-Nearest Neighbors (k-NN) for collaborative filtering.
--[ ]  Evaluated models using appropriate metrics.
--[ ]  Compared model performances.
+- [x]  Prepare interaction matrix using dataset.
+- [ ]  Implemented classical models.
+- [ ]  Understand and implement user-based k-Nearest Neighbors (k-NN) for collaborative filtering.
+- [ ]  Evaluated models using appropriate metrics.
+- [ ]  Compared model performances.
 
 ### What I Learned
 
@@ -76,4 +76,7 @@ This helps estimate missing ratings by projecting users and items into a shared 
 - **Source:** Provided `ratings.csv` (userId, movieId, rating, timestamp) and `movies.csv` (movieId, title, genres).
 - Used only userId, movieId, and rating for collaborative filtering.
 - Data is split per user into training and test sets.
+<hr>
+⚠️ Note : I have not yet not finished with my week 4 as i am still stuck between k-nn model and liogistic regression  model 
+- Trying to figure out !! 
 
