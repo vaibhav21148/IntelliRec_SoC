@@ -3,7 +3,7 @@ from sklearn.neighbors import NearestNeighbors
 import numpy as np
 
 # Load user-item matrix
-df = pd.read_csv("user_item_matrix.csv", index_col=0)
+df = pd.read_csv(r"C:\Users\vaibh\OneDrive\Desktop\IITB\SoC_WnCC\IntelliRec_SoC\Week 4\user_item_matrix.csv", index_col=0)
 
 # Transpose for item-based similarity
 movie_user_matrix = df.T
@@ -13,7 +13,7 @@ model_knn = NearestNeighbors(metric='cosine', algorithm='brute')
 model_knn.fit(movie_user_matrix)
 
 # Pick a movie to find similar ones
-movie_title = "Inception"  # Change this to any movie in your data
+movie_title = "2 Days in New York (2012)"  # Change this to any movie in your data
 
 # Check if movie exists
 if movie_title not in movie_user_matrix.index:
