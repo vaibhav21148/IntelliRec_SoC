@@ -64,19 +64,13 @@ This helps estimate missing ratings by projecting users and items into a shared 
 ## Week 4
 
 ### ✅Goals
-<<<<<<< HEAD
--[x]  Prepare interaction matrix using dataset.
--[X]  Implemented classical models.
--[x]  Understand and implement user-based k-Nearest Neighbors (k-NN) for collaborative filtering.
--[x]  Evaluated models using appropriate metrics.
--[x]  Compared model performances.
-=======
+
 - [x]  Prepare interaction matrix using dataset.
-- [ ]  Implemented classical models.
-- [ ]  Understand and implement user-based k-Nearest Neighbors (k-NN) for collaborative filtering.
-- [ ]  Evaluated models using appropriate metrics.
-- [ ]  Compared model performances.
->>>>>>> ff3e38f136324e4a7bb4301c29e96e1f13c0fe56
+- [x]  Implemented classical models.
+- [x]  Understand and implement user-based k-Nearest Neighbors (k-NN) for collaborative filtering.
+- [x]  Evaluated models using appropriate metrics.
+- [x]  Compared model performances.
+
 
 ### What I Learned
 - Understood how k-Nearest Neighbors (k-NN) and logistic regression can be applied in recommender systems.
@@ -90,15 +84,13 @@ This helps estimate missing ratings by projecting users and items into a shared 
 - Used only userId, movieId, and rating for collaborative filtering.
 - Data is split per user into training and test sets.
 <hr>
-⚠️ Note : I have not yet not finished with my week 4 as i am still stuck between k-nn model and liogistic regression  model 
-- Trying to figure out !! 
 
 ## Week 5
 
 ### ✅Goals
--[x]   Developed hybrid recommendation model.
--[x]  Addressed cold-start problem.
--[x]  Created visualizations of embeddings.
+- [x]   Developed hybrid recommendation model.
+- [x]  Addressed cold-start problem.
+- [x]  Created visualizations of embeddings.
 
 ### What I Learned
 - Explored the concept of hybrid recommender systems by combining content-based and collaborative filtering.
@@ -110,9 +102,9 @@ This helps estimate missing ratings by projecting users and items into a shared 
 ## Week 6
 
 ### ✅Goals
--[x]  Completed study of neural networks.
--[x]  Implemented deep learning recommendation model.
--[x]  Compared model performances.
+- [x]  Completed study of neural networks.
+- [x]  Implemented deep learning recommendation model.
+- [x]  Compared model performances.
 
 ### What I Learned
 - Studied the architecture of neural networks, focusing on embedding layers for user/item representation.
@@ -124,9 +116,9 @@ This helps estimate missing ratings by projecting users and items into a shared 
 ## Week 7
 
 ### ✅Goals
--[x]  Developed frontend interface.
--[x]  Integrated APIs with frontend.
--[x]  Implemented user interaction features.
+- [x]  Developed frontend interface.
+- [x]  Integrated APIs with frontend.
+- [x]  Implemented user interaction features.
 
 ### What I Learned
 - Built a user-friendly frontend for the recommendation system using Streamlit.
@@ -135,11 +127,11 @@ This helps estimate missing ratings by projecting users and items into a shared 
 - Designed a basic user interaction system (e.g., feedback, likes/dislikes) for future personalization.
 - Understood how to structure a full-stack ML application with clear separation between frontend and backend.
 
----
+<hr>
 
 INTELLIREC is an end-to-end movie recommendation system developed in an 8-week learning sprint. It integrates classical recommendation algorithms, deep learning models, hybrid systems, and a full-stack application interface with planned deployment.
 
----
+<hr>
 
 ## 📁 Folder Structure with File Descriptions
 
@@ -223,3 +215,5 @@ Developed with 💡 by **Vaibhav**
 
 ⭐ If you find this helpful or inspiring, give it a ⭐
 Thank You !!!
+
+<hr>
